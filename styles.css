@@ -1,34 +1,81 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     margin: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-
+    min-height: 100vh;
 }
 
 .header{
+    height: 10vh;
     display: flex;
-    font-size: 72px;
+    font-size: 60px;
     color: rgb(191, 188, 25);
     justify-content: center;
     align-items: center;
-    background-color:rgb(1, 1, 59)
+    background-color:rgb(2, 2, 41)
 }
-#game{
+
+.scoreboard{
     display: flex;
-    flex-basis: 75vh;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:baseline;
     align-items: center;
-    background-color:rgb(1, 1, 59)
+    height: 70vh;
+    background-color:rgb(1, 1, 59);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    gap: 15px;
+}
+
+h1{
+    font-size: 36px;
+    
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 100px;
+
+
+}
+#scoresContainer{
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    margin:  0 auto;
+    padding: 10px;
+    gap: 100px
+}
+.scoreBox{
+    text-align: center;
+    width: 200px;
+}
+
+.playerSign{
+
+    text-align: center;
+    font-size: 72px;
 }
 
 .buttons{
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    flex-basis: 25vh;
+    flex: 1;
+    justify-content: space-around;
+    align-items:flex-start;
     background-color:rgb(2, 2, 79)
 }
 
